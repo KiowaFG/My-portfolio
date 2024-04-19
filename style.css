@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+nav {
+    box-shadow: 4px 6px 13px 5px rgba(0, 0, 0, 0.22);
+    background-color: rgb(39, 38, 38);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.nav-ul li {
+    width: 20vw;
+    text-align: center;
+    cursor: pointer;
+    padding: 30px;
+    transition: 300ms;
+    color: #f5f5dc;
+
+}
+
+.nav-ul li:hover {
+    background-color: rgb(76, 70, 70);
+
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+#hero-description {
+    width: 40vw;
+}
+
+#hero-name {
+    font-size: 60px;
+    color: rgb(39, 38, 38);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.h1-rest {
+    -webkit-text-stroke: 1px rgb(39, 38, 38);
+    color: beige;
+    text-shadow:
+        3px 3px 0 rgb(39, 38, 38),
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+
+p {
+    padding-top: 20px;
+}
+
+.contact-buttons {
+    padding-top: 60px;
+    /* padding: 20px; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button {
+    padding: 10px 20px;
+    transition: 400ms;
+    background-color: rgb(39, 38, 38);
+    color: beige;
+    cursor: pointer;
+}
+
+.vertical {
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: 60vw;
+    background-color: rgb(39, 38, 38);
+}
+
+.horizontal {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 15vh;
+    background-color: rgb(39, 38, 38);
+}
+
+.button:hover {
+    background-color: rgb(76, 70, 70);
+}
+
+.close-btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+
+
+}
+
+.github {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.linkedin {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.gmail {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.hide-menu{
+animation: hide-menu 300ms;
+}
+
+@keyframes hide-menu { /* i still have to add the js */
+    from{
+        transform: translateY(0)
+    }
+   to{
+    transform: translateY(-40px);
+   }
+}
+
+
+
+/*mouse enter i mouse leave*/
